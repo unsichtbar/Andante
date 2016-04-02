@@ -7,6 +7,7 @@ package sample;
 import javafx.application.Platform; //alternative threading
 
 import javafx.scene.Scene; //listeners and drawing
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
@@ -22,9 +23,13 @@ public class PlayController {
     private boolean levelComplete;
 
     @FXML
-    private Pane PreviewPane;
+    private Button questionButton;
     @FXML
-    private Label scoreLabel;
+    private Button choice1Button;
+    @FXML
+    private Button choice2Button;
+    @FXML
+    private Button choice3Button;
 
     public PlayController(){
 
@@ -36,6 +41,11 @@ public class PlayController {
         this.height = 800;
         this.paused = false;
         this.levelComplete = false;
+    }
+
+    @FXML
+    public void updateQuestion(){
+        questionButton.setText("QUESTIONNNN");
     }
 
 }
