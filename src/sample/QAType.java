@@ -5,6 +5,8 @@ package sample;
  */
 public class QAType {
 
+    //Copy paste this code to the Question.java file
+
     String questionForUser;
     String questionFeedback;
     String questionTopic;
@@ -12,7 +14,7 @@ public class QAType {
     int questionNumber;
     int questionLevel;
 
-    public QAType WordAndPicture(String questionForUser, int questionLevel, int questionNumber, String questionFeedback, String questionTopic) {
+    public QAType(String questionForUser, int questionLevel, int questionNumber, String questionFeedback, String questionTopic) {
 
         this.questionForUser = questionForUser;
         this.questionLevel = questionLevel;
@@ -20,8 +22,8 @@ public class QAType {
         this.questionFeedback = questionFeedback;
         this.questionTopic = questionTopic;
 
-        //Not sure what to return?
     }
+
 
     public String getQuestionForUser() {
         return questionForUser;
