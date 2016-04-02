@@ -5,65 +5,6 @@ package sample;
  */
 public class QAType {
 
-    //Copy paste this code to the Question.java file
-
-    String questionForUser;
-    String questionFeedback;
-    String questionTopic;
-
-    int questionNumber;
-    int questionLevel;
-
-    public QAType(String questionForUser, int questionLevel, int questionNumber, String questionFeedback, String questionTopic) {
-
-        this.questionForUser = questionForUser;
-        this.questionLevel = questionLevel;
-        this.questionNumber = questionNumber;
-        this.questionFeedback = questionFeedback;
-        this.questionTopic = questionTopic;
-
-    }
-
-
-    public String getQuestionForUser() {
-        return questionForUser;
-    }
-
-    public void setQuestionForUser(String questionForUser) {
-        this.questionForUser = questionForUser;
-    }
-
-    public int getQuestionLevel() {
-        return questionLevel;
-    }
-
-    public void setQuestionLevel(int questionLevel) {
-        this.questionLevel = questionLevel;
-    }
-
-    public int getQuestionNumber() {
-        return questionNumber;
-    }
-
-    public void setQuestionNumber(int questionNumber) {
-        this.questionNumber = questionNumber;
-    }
-
-    public String getQuestionTopic() {
-        return questionTopic;
-    }
-
-    public void setQuestionTopic(String questionTopic) {
-        this.questionTopic = questionTopic;
-    }
-
-    public String getQuestionFeedback() {
-        return questionFeedback;
-    }
-
-    public void setQuestionFeedback(String questionFeedback) {
-        this.questionFeedback = questionFeedback;
-    }
-
+    
 
 }
