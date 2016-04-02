@@ -8,11 +8,11 @@ import java.util.ArrayList;
 public class Level {
     private LevelType l;
     public void playLevel(){
-        l.showLevel();
-        l.showChoices();
-        while(){  //choice not chosen
+       // l.showLevel();
+      //  l.showChoices();
+       // while(){  //choice not chosen
 
-        }
+        //}
     }
 
 }
