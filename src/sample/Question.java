@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class Question {
     private Card quest;
-    private ArrayList<Card> choices;
+    private ArrayList<Card> chdoices;
     private Card correct;
 
     public Question(String question, ){ //get these from the database
