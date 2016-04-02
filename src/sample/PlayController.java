@@ -45,7 +45,7 @@ public class PlayController {
 
     @FXML
     public void updateQuestion(){
-        questionButton.setText("QUESTIONNNN");
+        questionButton.setText("you clicked choice 1");
     }
 
 }
