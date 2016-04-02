@@ -1,12 +1,15 @@
 package sample;
 
+import org.bson.BSON;
+import org.bson.BsonObjectId;
+
 import java.util.ArrayList;
 
 /**
  * Created by Mikayla on 4/2/2016.
  */
 public class Question {
-    public int id;
+    public BsonObjectId id;
     public Card quest;
     public ArrayList<Card> choices;
 
@@ -26,6 +29,46 @@ public class Question {
         this.questionTopic = questionTopic;
 
     }
+
+    public String getQuestionForUser() {
+        return questionForUser;
+    }
+
+    public void setQuestionForUser(String questionForUser) {
+        this.questionForUser = questionForUser;
+    }
+
+    public int getQuestionLevel() {
+        return questionLevel;
+    }
+
+    public void setQuestionLevel(int questionLevel) {
+        this.questionLevel = questionLevel;
+    }
+
+    public int getQuestionNumber() {
+        return questionNumber;
+    }
+
+    public void setQuestionNumber(int questionNumber) {
+        this.questionNumber = questionNumber;
+    }
+
+    public String getQuestionTopic() {
+        return questionTopic;
+    }
+
+    public void setQuestionTopic(String questionTopic) {
+        this.questionTopic = questionTopic;
+    }
+
+    public String getQuestionFeedback() {
+        return questionFeedback;
+    }
+
+    public void setQuestionFeedback(String questionFeedback) {
+        this.questionFeedback = questionFeedback;
+    }
+
+
 }
-
-
