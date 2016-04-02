@@ -5,6 +5,6 @@ package sample;
  */
 public class QAType {
 
-    
+
 
 }
