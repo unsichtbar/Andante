@@ -5,5 +5,4 @@ package sample;
  */
 public interface Drawable {
     void draw();
-    //alex branch test
 }
