@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
@@ -12,7 +14,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     private Stage window;
-    private Scene splash;
+    private Scene startScreen;
     private Scene playScreen;
 
 
@@ -25,7 +27,10 @@ public class Main extends Application {
         mp.play();*/
         Parent root = FXMLLoader.load(getClass().getResource("play.fxml"));
         primaryStage.setTitle("Level 1");
-        primaryStage.setScene(new Scene(root, 1280, 800));
+        //primaryStage.setScene(new Scene(root, 1280, 800));
+        Pane page = (Pane)(FXMLLoader.load(Main.class.getResource("play.fxml")));
+        this.playScreen = new Scene(page);
+        primaryStage.setScene(this.playScreen);
         primaryStage.show();
     }
 
