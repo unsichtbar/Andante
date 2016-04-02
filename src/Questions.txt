@@ -1,0 +1,251 @@
+Q: How many pitches are there?
+    7
+    8
+    6
+    5
+
+Q: Name this clef. #Treble
+    Treble Clef
+    Bass Clef
+
+Q: Name this clef. #Bass
+    Bass Clef
+    Treble Clef
+
+Q: How many lines are there in a clef?
+    5 lines
+    6 lines
+    4 lines
+    7 lines
+
+---------------------------------------
+
+Q: What are the accidentals?
+    Natural, flat, and sharp
+    Normal, high, and low
+    Neutral, treble, and bass
+
+
+---------------------------------------
+Q: What pitch is this? #A pitch
+    A pitch
+    C pitch
+    D pitch
+    F pitch
+
+Q: What pitch is this? #B pitch
+   B pitch
+   C pitch
+   F pitch
+   H pitch
+
+Q: What pitch is this? #C pitch
+    C pitch
+    E pitch
+    A pitch
+    D pitch
+
+Q: What pitch is this? #D pitch
+    D pitch
+    F pitch
+    A pitch
+    E pitch
+
+Q: What pitch is this? #E pitch
+    E pitch
+    D pitch
+    A pitch
+    H pitch
+
+Q: What pitch is this? #F pitch
+    F pitch
+    E pitch
+    A pitch
+    D pitch
+
+Q: What pitch is this? #G pitch
+    G pitch
+    D pitch
+    A pitch
+    C pitch
+---------------------------------------
+Q: Where is A on the staff?
+    #A pitch on staff
+    #B pitch on staff
+    #D pitch on staff
+    #F pitch on staff
+
+Q: Where is B on the staff?
+    #B pitch on staff
+    #C pitch on staff
+    #E pitch on staff
+    #F pitch on staff
+
+Q: Where is C on the staff?
+    #C pitch on staff
+    #D pitch on staff
+    #F pitch on staff
+    #A pitch on staff
+
+Q: Where is D on the staff?
+    #D pitch on staff
+    #C pitch on staff
+    #A pitch on staff
+    #F pitch on staff
+
+Q: Where is E on the staff?
+    #E pitch on staff
+    #G pitch on staff
+    #C pitch on staff
+    #A pitch on staff
+
+Q: Where is F on the staff?
+    #F pitch on staff
+    #E pitch on staff
+    #A pitch on staff
+    #D pitch on staff
+
+
+Q: Where is G on the staff?
+    #G pitch on staff
+    #A pitch on staff
+    #D pitch on staff
+    #E pitch on staff
+---------------------------------------
+#########################################
+Q: What is the duration of a whole note?
+    4 beats
+    3 beats
+    5 beats
+
+Q: What is the duration of a half note?
+    2 beats
+    3 beats
+    1 beat
+
+Q: What is the duration of a quarter note?
+    1 beat
+    2 beats
+    3 beats
+
+Q: What is the duration of an eighth note?
+    1/2 beat
+    1 beat
+    1/8 beats
+
+Q: What is the duration of a sixteenth note?
+    1/4 beat
+    1/2 beat
+    1/16 beat
+#####################################################
+---------------------------------------
+Q: Sixteenth
+    #16th note
+    #8th note
+    #half note
+
+Q: Eighth
+    #8th Note
+    #16th note
+    #Quarter note
+
+Q: Quarter
+    #Quarter note
+    #8th note
+    #Half note
+
+
+Q: Half
+    #Half note
+    #Quarter note
+    #8th note
+
+Q: Whole
+    #Whole note
+    #Half note
+    #Quarter note
+
+---------------------------------------
+
+Q: C Major
+    #C Major
+    #G Major
+    #D Major
+
+Q: G Major
+    #G Major
+    #D Major
+    #A Major
+Q: D Major
+    #D Major
+    #A Major
+    #B Major
+
+Q: A Major
+    #A Major
+    #E Major
+    #G Major
+
+Q: E Major
+    #E Major
+    #B Major
+    #D Major
+
+Q: B Major
+    #B Major
+    #C Major
+    #H Major
+
+Q: F# Major
+    #F# Major
+    #D# Major
+    #D Major
+
+Q: C# Major
+    #C# Major
+    #C Major
+    #G Major
+
+-----------------------------------------
+
+Q: #C Major
+   C Major
+   C# Major
+   D Major
+
+Q: #G Major
+   G major
+   D major
+   A Major
+
+Q: #D Major
+    D major
+    E Major
+    C# Major
+
+Q: #A Major
+    A Major
+    B Major
+    G Major
+
+
+Q: #E Major
+    E Major
+    C# Major
+    D Major
+
+Q: #B Major
+    B Major
+    F# Major
+    C# Major
+
+Q: #F# Major
+    F# Major
+    C# Major
+    B Major
+
+Q: #C# Major
+    C# Major
+    F# Major
+    B Major
+-----------------------------------------
