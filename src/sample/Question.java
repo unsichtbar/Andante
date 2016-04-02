@@ -6,11 +6,9 @@ import java.util.ArrayList;
  * Created by Mikayla on 4/2/2016.
  */
 public class Question {
-    private Card quest;
-    private ArrayList<Card> chdoices;
-    private Card correct;
+    public Card quest;
+    public ArrayList<Card> choices;
+    public int levelNum;
 
-    public Question(String question, ){ //get these from the database
 
-    }
 }
