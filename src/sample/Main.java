@@ -19,10 +19,10 @@ public class Main extends Application {
     //bloop bop
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Media media = new Media(Main.class.getResource("CherryBlossoms.mp3").toString());
+        /*Media media = new Media(Main.class.getResource("CherryBlossoms.mp3").toString());
         MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
         mp.setCycleCount(MediaPlayer.INDEFINITE);
-        mp.play();
+        mp.play();*/
         Parent root = FXMLLoader.load(getClass().getResource("play.fxml"));
         primaryStage.setTitle("Level 1");
         primaryStage.setScene(new Scene(root, 1280, 800));
