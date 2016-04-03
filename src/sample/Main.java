@@ -9,6 +9,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class Main extends Application {
@@ -25,6 +26,7 @@ public class Main extends Application {
         MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
         mp.setCycleCount(MediaPlayer.INDEFINITE);
         mp.play();*/
+        //primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
         primaryStage.setTitle("Andante");
         //primaryStage.setScene(new Scene(root, 1280, 800));

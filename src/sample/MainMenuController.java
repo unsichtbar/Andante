@@ -33,67 +33,69 @@ public class MainMenuController {
     @FXML
     Ellipse level_8_note;
 
+
+
     @FXML
     public void initialize(){
 
         level_1_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_1_note);
+                ChangeLevel(level_1_note, 1);
             }
         });
 
         level_2_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_2_note);
+                ChangeLevel(level_2_note, 2);
             }
         });
 
         level_3_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_3_note);
+                ChangeLevel(level_3_note, 3);
             }
         });
 
         level_4_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_4_note);
+                ChangeLevel(level_4_note, 4);
             }
         });
 
         level_5_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_5_note);
+                ChangeLevel(level_5_note, 5);
             }
         });
 
         level_6_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_6_note);
+                ChangeLevel(level_6_note, 6);
             }
         });
 
         level_7_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_7_note);
+                ChangeLevel(level_7_note, 7);
             }
         });
 
         level_8_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_8_note);
+                ChangeLevel(level_8_note, 8);
             }
         });
     }
 
-    private void ChangeLevel(Ellipse ellipse)
+    private void ChangeLevel(Ellipse ellipse, int level)
     {
         Stage stage;
         Parent root;
