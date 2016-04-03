@@ -52,7 +52,7 @@ public class Main extends Application {
         Pane page = loader.load();
         maincontroller = loader.getController();
         maincontroller.setStage(window);
-        //primaryStage.setScene(new Scene(root, 1280, 800));
+        primaryStage.setScene(new Scene(root, 1280, 800));
         this.startScreen = new Scene(page);
         this.window.setScene(this.startScreen);
         this.window.show();
