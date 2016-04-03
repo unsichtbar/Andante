@@ -102,9 +102,13 @@ public class MainMenuController {
         Main.currentLevel = level;
         stage=(Stage)ellipse.getScene().getWindow();
         try{
+
+            //Question question =
             root = FXMLLoader.load(getClass().getResource("play.fxml"));
+
             Scene scene = new Scene(root);
             stage.setScene(scene);
+
             stage.show();
         }
         catch(IOException e){

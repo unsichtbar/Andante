@@ -23,6 +23,7 @@ public class PlayController {
     private int height;
     private boolean paused;
     private boolean levelComplete;
+    private Question currentQuestion;
 
     @FXML
     private Button questionButton;
@@ -47,7 +48,27 @@ public class PlayController {
                 questionButton.setText("you clicked choice 1.");
             }
         });
+        this.choice2Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                questionButton.setText("you clicked choice 2.");
+            }
+        });
+        this.choice3Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                questionButton.setText("you clicked choice 3.");
+            }
+        });
     }
 
 
+    public void setCurrentQuestion(Question question)
+    {
+        this.currentQuestion = question;
+    }
+    public void setQuestionImages()
+    {
+
+    }
 }
