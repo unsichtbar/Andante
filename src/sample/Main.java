@@ -31,6 +31,9 @@ public class Main extends Application {
 
         this.window = primaryStage;
         Main.db = new QuestionDatabase();
+
+
+
         /*Media media = new Media(Main.class.getResource("CherryBlossoms.mp3").toString());
         MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
         mp.setCycleCount(MediaPlayer.INDEFINITE);

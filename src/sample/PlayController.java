@@ -10,9 +10,10 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene; //listeners and drawing
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
@@ -23,7 +24,7 @@ public class PlayController {
     private int height;
     private boolean paused;
     private boolean levelComplete;
-    private Question currentQuestion;
+    public Question currentQuestion;
 
     @FXML
     private Button questionButton;
@@ -69,6 +70,13 @@ public class PlayController {
     }
     public void setQuestionImages()
     {
-
+       Question q =  question;
+        String questionText = q.questionCard.getContent();
+        String answer1 = q.getAnswers().get(0).getContent();
+        BackgroundImage backgroundImage = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer1).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        Background background = new Background(backgroundImage);
+        this.choice1Button.setBackground(background);
+        String answer2 = q.getAnswers().get(1).getContent();
+        String answer3 = q.getAnswers().get(2).getContent();
     }
 }

@@ -10,10 +10,16 @@ import java.util.LinkedList;
 public class QuestionDatabase {
 
     private HashMap<Integer, ArrayList<Question>> levels;
-
+    private LinkedList<Question> usedQuestions;
     public QuestionDatabase(){
-
+        this.usedQuestions = new LinkedList<Question>();
         this.levels = new HashMap<Integer, ArrayList<Question>>();
+        this.populateLevel1();
+        this.populateLevel2();
+        this.populateLevel3();
+        this.populateLevel4();
+        this.populateLevel5();
+        this.populateLevel6();
 
     }
 
@@ -71,4 +77,10 @@ public class QuestionDatabase {
         this.levels.put( (Integer)6 , set6);
     }
 
+    /*
+    public Question getUnusedQuestion(int level){
+        ArrayList<Question> currentQuestions = this.levels.get(level);
+
+    }
+*/
 }
