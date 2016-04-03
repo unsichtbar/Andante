@@ -25,10 +25,10 @@ public class Main extends Application {
         MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
         mp.setCycleCount(MediaPlayer.INDEFINITE);
         mp.play();*/
-        Parent root = FXMLLoader.load(getClass().getResource("play.fxml"));
-        primaryStage.setTitle("Level 1");
+        Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
+        primaryStage.setTitle("Andante");
         //primaryStage.setScene(new Scene(root, 1280, 800));
-        Pane page = (Pane)(FXMLLoader.load(Main.class.getResource("play.fxml")));
+        Pane page = (FXMLLoader.load(Main.class.getResource("main_menu.fxml")));
         this.playScreen = new Scene(page);
         primaryStage.setScene(this.playScreen);
         primaryStage.show();
