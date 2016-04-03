@@ -6,10 +6,12 @@ package sample;
 
 import javafx.application.Platform; //alternative threading
 
+import javafx.event.EventHandler;
 import javafx.scene.Scene; //listeners and drawing
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
@@ -31,9 +33,7 @@ public class PlayController {
     @FXML
     private Button choice3Button;
 
-    public PlayController(){
 
-    }
 
     @FXML
     public void initialize(){
@@ -41,11 +41,13 @@ public class PlayController {
         this.height = 800;
         this.paused = false;
         this.levelComplete = false;
+        this.choice1Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                questionButton.setText("you clicked choice 1.");
+            }
+        });
     }
 
-    @FXML
-    public void updateQuestion(){
-        questionButton.setText("you clicked choice 1");
-    }
 
 }
