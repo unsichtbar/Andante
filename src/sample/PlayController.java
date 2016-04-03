@@ -17,6 +17,8 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
@@ -24,6 +26,7 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.Random;
 
@@ -66,10 +69,10 @@ public class PlayController {
                     return;
                 }
                 else{
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setHeaderText("ERROR");
-                    alert.setTitle("ERROR");
-                    alert.setContentText("INCORRECT!");
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setHeaderText("Incorrect!");
+                    alert.setTitle("Incorrect!");
+                    alert.setContentText("Sorry, try again!");
                     alert.showAndWait();
                 }
             }
@@ -86,10 +89,10 @@ public class PlayController {
                     return;
                 }
                 else{
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setHeaderText("ERROR");
-                    alert.setTitle("ERROR");
-                    alert.setContentText("INCORRECT!");
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setHeaderText("Incorrect!");
+                    alert.setTitle("Incorrect!");
+                    alert.setContentText("Sorry, try again!");
                     alert.showAndWait();
                 }
             }
@@ -106,10 +109,10 @@ public class PlayController {
                     return;
                 }
                 else{
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setHeaderText("ERROR");
-                    alert.setTitle("ERROR");
-                    alert.setContentText("INCORRECT!");
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setHeaderText("Incorrect!");
+                    alert.setTitle("Incorrect!");
+                    alert.setContentText("Sorry, try again!");
                     alert.showAndWait();
                 }
             }
@@ -132,6 +135,12 @@ public class PlayController {
                 gameController.setStage(this.stage);
                 Scene scene = new Scene(root);
                 Main.db.usedQuestions.clear();
+
+                URL resource = getClass().getResource("/sounds/harp.mp3");
+                Media media = new Media(resource.toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
+
                 this.stage.setScene(scene);
                 this.stage.show();
             }
