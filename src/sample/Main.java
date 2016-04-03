@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.media.Media;
@@ -19,6 +20,8 @@ public class Main extends Application {
     private Scene playScreen;
 
 
+
+
     //bloop bop
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -29,6 +32,10 @@ public class Main extends Application {
         //primaryStage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
         primaryStage.setTitle("Andante");
+        MainMenuController main;
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
+        main = loader.getController();
         //primaryStage.setScene(new Scene(root, 1280, 800));
         Pane page = (FXMLLoader.load(Main.class.getResource("main_menu.fxml")));
         this.playScreen = new Scene(page);
