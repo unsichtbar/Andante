@@ -13,6 +13,10 @@ import javafx.scene.Scene; //listeners and drawing
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.effect.DropShadow;
+import javafx.scene.effect.Light;
+import javafx.scene.effect.Lighting;
+import javafx.scene.effect.Reflection;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseEvent;
@@ -114,6 +118,7 @@ public class PlayController {
                 }
             }
         });
+
     }
 
     private void handleQuestions() {
