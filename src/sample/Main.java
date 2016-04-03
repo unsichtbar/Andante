@@ -30,14 +30,11 @@ public class Main extends Application {
         mp.setCycleCount(MediaPlayer.INDEFINITE);
         mp.play();*/
         //primaryStage.setResizable(false);
-        currentLevel = 0;
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
         primaryStage.setTitle("Andante");
         MainMenuController main;
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
         main = loader.getController();
-        //primaryStage.setScene(new Scene(root, 1280, 800));
         Pane page = (FXMLLoader.load(Main.class.getResource("main_menu.fxml")));
         this.playScreen = new Scene(page);
         primaryStage.setScene(this.playScreen);
