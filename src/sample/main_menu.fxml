@@ -18,8 +18,8 @@
       <Ellipse fx:id="level_3_note" fill="#f1ff1f" layoutX="600.0" layoutY="553.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_4_note" fill="#1fff27" layoutX="715.0" layoutY="480.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_6_note" fill="#1f49ff" layoutX="948.0" layoutY="312.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_7_note" fill="#a31fff" layoutX="1068.0" layoutY="225.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_8_note" fill="#ff1f93" layoutX="1186.0" layoutY="145.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_7_note" fill="#806594" layoutX="1068.0" layoutY="225.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_8_note" fill="#806594" layoutX="1186.0" layoutY="145.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_5_note" fill="#1fffe9" layoutX="834.0" layoutY="393.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_2_note" fill="#ff7f1f" layoutX="478.0" layoutY="642.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_1_note" fill="#ff1f1f" layoutX="342.0" layoutY="723.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
@@ -39,6 +39,16 @@
       <ImageView fitHeight="724.0" fitWidth="319.0" layoutX="10.0" layoutY="8.0">
          <image>
             <Image url="@../pictures/mainmenu_treble_clef.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1161.0" layoutY="113.0" opacity="0.6">
+         <image>
+            <Image url="@../pictures/lock.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1041.0" layoutY="193.0" opacity="0.6">
+         <image>
+            <Image url="@../pictures/lock.png" />
          </image>
       </ImageView>
    </children>
