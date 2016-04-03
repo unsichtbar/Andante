@@ -23,14 +23,14 @@
       <Ellipse fx:id="level_5_note" fill="#1fffe9" layoutX="834.0" layoutY="393.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_2_note" fill="#ff7f1f" layoutX="478.0" layoutY="642.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_1_note" fill="#ff1f1f" layoutX="342.0" layoutY="723.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label layoutX="319.0" layoutY="715.0" text="Level 1" />
-      <Label layoutX="576.0" layoutY="546.0" text="Level 3" />
-      <Label layoutX="691.0" layoutY="473.0" text="Level 4" />
-      <Label layoutX="810.0" layoutY="385.0" text="Level 5" />
-      <Label layoutX="930.0" layoutY="304.0" text="Level 6" />
-      <Label layoutX="1042.0" layoutY="217.0" text="Level 7" />
-      <Label layoutX="1161.0" layoutY="137.0" text="Level 8" />
-      <Label layoutX="450.0" layoutY="635.0" text="Level 2" />
+      <Label layoutX="319.0" layoutY="715.0" mouseTransparent="true" pickOnBounds="false" text="Level 1" />
+      <Label layoutX="576.0" layoutY="546.0" mouseTransparent="true" pickOnBounds="false" text="Level 3" />
+      <Label layoutX="691.0" layoutY="473.0" mouseTransparent="true" pickOnBounds="false" text="Level 4" />
+      <Label layoutX="810.0" layoutY="385.0" mouseTransparent="true" pickOnBounds="false" text="Level 5" />
+      <Label layoutX="930.0" layoutY="304.0" mouseTransparent="true" pickOnBounds="false" text="Level 6" />
+      <Label layoutX="1042.0" layoutY="217.0" mouseTransparent="true" pickOnBounds="false" text="Level 7" />
+      <Label layoutX="1161.0" layoutY="137.0" mouseTransparent="true" pickOnBounds="false" text="Level 8" />
+      <Label layoutX="450.0" layoutY="635.0" mouseTransparent="true" pickOnBounds="false" text="Level 2" />
       <Label layoutX="888.0" layoutY="601.0" text="Andante" textAlignment="CENTER" textFill="#030303">
          <font>
             <Font name="Times New Roman" size="80.0" />
