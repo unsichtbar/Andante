@@ -16,7 +16,7 @@ public class Question {
 
 
     public Question( String question, String answer1, String answer2, String answer3, int answerType  ) {
-        this.questionCard = new Card(question, answerType);
+        this.questionCard = new Card(question, 0);
         this.choices = new ArrayList<Card>();
         this.choices.add(new Card(answer1, answerType));
         this.choices.get(0).setIsCorrect(true);

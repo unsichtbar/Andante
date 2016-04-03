@@ -14,31 +14,44 @@ import javafx.stage.StageStyle;
 
 
 public class Main extends Application {
+
     public static int currentLevel;
     private Stage window;
     private Scene startScreen;
     private Scene playScreen;
-
+    private MainMenuController maincontroller;
+    public static QuestionDatabase db;
+   // public Main main;
 
 
 
     //bloop bop
     @Override
     public void start(Stage primaryStage) throws Exception{
+
+        this.window = primaryStage;
+        Main.db = new QuestionDatabase();
+
+
+
         /*Media media = new Media(Main.class.getResource("CherryBlossoms.mp3").toString());
         MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
         mp.setCycleCount(MediaPlayer.INDEFINITE);
         mp.play();*/
         //primaryStage.setResizable(false);
+        currentLevel = 0;
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
-        primaryStage.setTitle("Andante");
-        MainMenuController main;
+        //main = this;
+        this.window.setTitle("Andante");
+
+
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
-        main = loader.getController();
+        maincontroller = loader.getController();
+        //primaryStage.setScene(new Scene(root, 1280, 800));
         Pane page = (FXMLLoader.load(Main.class.getResource("main_menu.fxml")));
         this.playScreen = new Scene(page);
-        primaryStage.setScene(this.playScreen);
-        primaryStage.show();
+        this.window.setScene(this.playScreen);
+        this.window.show();
     }
 
 
