@@ -1,7 +1,5 @@
 package sample;
 
-import org.bson.BSON;
-import org.bson.BsonObjectId;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

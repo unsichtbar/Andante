@@ -10,7 +10,7 @@ import java.util.LinkedList;
 public class QuestionDatabase {
 
     private HashMap<Integer, ArrayList<Question>> levels;
-    private LinkedList<Question> usedQuestions;
+    public LinkedList<Question> usedQuestions;
     public QuestionDatabase(){
         this.usedQuestions = new LinkedList<Question>();
         this.levels = new HashMap<Integer, ArrayList<Question>>();

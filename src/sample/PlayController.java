@@ -24,6 +24,8 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Collections;
+import java.util.Random;
 
 public class PlayController {
     private int width;
@@ -78,8 +80,8 @@ public class PlayController {
                 //questionButton.setText("you clicked choice 2.");
                 if(currentQuestion.getAnswers().get(1).getIsCorrect()){
                     //load next question into this controller
-                        //if DB Level == null, there aren't any questions left
-                        // take them back to main menu
+                    //if DB Level == null, there aren't any questions left
+                    // take them back to main menu
                     handleQuestions();
                     return;
                 }
@@ -129,6 +131,7 @@ public class PlayController {
                 MainMenuController gameController =  loader.getController();
                 gameController.setStage(this.stage);
                 Scene scene = new Scene(root);
+                Main.db.usedQuestions.clear();
                 this.stage.setScene(scene);
                 this.stage.show();
             }
@@ -154,6 +157,8 @@ public class PlayController {
         BackgroundImage backgroundImage3;
         Question q =  this.currentQuestion;
 
+        long seed = System.nanoTime();
+        Collections.shuffle(q.getAnswers(), new Random(seed));
         // question  field
         String questionText = q.questionCard.getContent();
         this.questionButton.setText(questionText);
