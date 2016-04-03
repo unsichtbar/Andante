@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #fffee6;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
    <children>
       <Line endX="1100.0" layoutX="141.0" layoutY="65.0" startX="-100.0" strokeWidth="25.0" />
       <Line endX="1100.0" layoutX="143.0" layoutY="227.0" startX="-100.0" strokeWidth="25.0" />
@@ -46,7 +46,7 @@
             <Image url="@../pictures/lock.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1041.0" layoutY="193.0" opacity="0.6">
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1042.0" layoutY="193.0" opacity="0.6">
          <image>
             <Image url="@../pictures/lock.png" />
          </image>

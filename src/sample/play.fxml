@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #fff9d3;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PlayController">
    <children>
-      <Button fx:id="choice2Button" layoutX="430.0" layoutY="423.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="420.0" />
-      <Button fx:id="choice1Button" layoutX="7.0" layoutY="423.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="420.0" />
-      <Button fx:id="choice3Button" layoutX="853.0" layoutY="423.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="420.0" />
-      <Button fx:id="questionButton" layoutX="430.0" layoutY="60.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="420.0" />
+      <Button fx:id="choice2Button" alignment="CENTER" contentDisplay="CENTER" layoutX="440.0" layoutY="423.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="400.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="choice1Button" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="423.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="400.0" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="choice3Button" alignment="CENTER" contentDisplay="CENTER" layoutX="866.0" layoutY="423.0" mnemonicParsing="false" prefHeight="300.0" prefWidth="400.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="questionButton" contentDisplay="CENTER" layoutX="430.0" layoutY="60.0" mnemonicParsing="false" mouseTransparent="true" pickOnBounds="false" prefHeight="300.0" prefWidth="420.0" style="-fx-background-color: #fff9d3;" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
    </children>
 </Pane>
