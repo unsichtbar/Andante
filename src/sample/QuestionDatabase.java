@@ -77,10 +77,17 @@ public class QuestionDatabase {
         this.levels.put( (Integer)6 , set6);
     }
 
-    /*
+
     public Question getUnusedQuestion(int level){
         ArrayList<Question> currentQuestions = this.levels.get(level);
-
+        for(int i = 0; i < currentQuestions.size(); i++){
+            if(!usedQuestions.contains(currentQuestions.get(i))){
+                usedQuestions.add(currentQuestions.get(i)); //used now, update it and return
+                return currentQuestions.get(i);
+            }
+        }
+        //finished the level, no more unused questions
+        return null;
     }
-*/
+
 }

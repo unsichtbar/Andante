@@ -172,7 +172,7 @@ public class MainMenuController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("play.fxml"));
             root = loader.load();
             gameController =  loader.getController();
-            gameController.setCurrentQuestion(new Question("A",  "key_a_minor.png", "key_c_minor.png", "key_e_minor.png", 0));
+            gameController.setCurrentQuestion(Main.db.getUnusedQuestion(level));
             gameController.setQuestionImages();
             //root = FXMLLoader.load(getClass().getResource("play.fxml"));
             Scene scene = new Scene(root);
