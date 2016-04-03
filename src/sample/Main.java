@@ -56,9 +56,10 @@ public class Main extends Application {
         this.startScreen = new Scene(page);
         this.window.setScene(this.startScreen);
         this.window.show();
-        URL resource = getClass().getResource("/sounds/e.mp3");
+        URL resource = getClass().getResource("/sounds/Nocturne.mp3");
         Media media = new Media(resource.toString());
         MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer.setVolume(2d);
         mediaPlayer.play();
     }
 
