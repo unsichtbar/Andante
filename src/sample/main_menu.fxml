@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Ellipse?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainMenuController">
    <children>
@@ -14,25 +15,30 @@
       <Line endX="1100.0" layoutX="137.0" layoutY="400.0" startX="-100.0" strokeWidth="25.0" />
       <Line endX="1100.0" layoutX="148.0" layoutY="561.0" startX="-100.0" strokeWidth="25.0" />
       <Line endX="1100.0" layoutX="150.0" layoutY="714.0" startX="-100.0" strokeWidth="25.0" />
-      <Ellipse fx:id="level_3_note" fill="DODGERBLUE" layoutX="599.0" layoutY="550.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_4_note" fill="DODGERBLUE" layoutX="728.0" layoutY="482.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_6_note" fill="DODGERBLUE" layoutX="948.0" layoutY="312.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_7_note" fill="DODGERBLUE" layoutX="1068.0" layoutY="225.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_8_note" fill="DODGERBLUE" layoutX="1186.0" layoutY="145.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_5_note" fill="DODGERBLUE" layoutX="835.0" layoutY="386.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_2_note" fill="DODGERBLUE" layoutX="478.0" layoutY="642.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
-      <Ellipse fx:id="level_1_note" fill="DODGERBLUE" layoutX="342.0" layoutY="723.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_3_note" fill="#f1ff1f" layoutX="600.0" layoutY="553.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_4_note" fill="#1fff27" layoutX="715.0" layoutY="480.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_6_note" fill="#1f49ff" layoutX="948.0" layoutY="312.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_7_note" fill="#a31fff" layoutX="1068.0" layoutY="225.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_8_note" fill="#ff1f93" layoutX="1186.0" layoutY="145.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_5_note" fill="#1fffe9" layoutX="834.0" layoutY="393.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_2_note" fill="#ff7f1f" layoutX="478.0" layoutY="642.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="level_1_note" fill="#ff1f1f" layoutX="342.0" layoutY="723.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Label layoutX="319.0" layoutY="715.0" text="Level 1" />
-      <Label layoutX="581.0" layoutY="541.0" text="Level 3" />
-      <Label layoutX="710.0" layoutY="474.0" text="Level 4" />
-      <Label layoutX="817.0" layoutY="378.0" text="Level 5" />
+      <Label layoutX="576.0" layoutY="546.0" text="Level 3" />
+      <Label layoutX="691.0" layoutY="473.0" text="Level 4" />
+      <Label layoutX="810.0" layoutY="385.0" text="Level 5" />
       <Label layoutX="930.0" layoutY="304.0" text="Level 6" />
-      <Label layoutX="1050.0" layoutY="217.0" text="Level 7" />
-      <Label layoutX="1168.0" layoutY="137.0" text="Level 8" />
-      <Label layoutX="460.0" layoutY="634.0" text="Level 2" />
-      <ImageView fitHeight="619.0" fitWidth="619.0" layoutX="-144.0" layoutY="68.0">
+      <Label layoutX="1042.0" layoutY="217.0" text="Level 7" />
+      <Label layoutX="1161.0" layoutY="137.0" text="Level 8" />
+      <Label layoutX="450.0" layoutY="635.0" text="Level 2" />
+      <Label layoutX="888.0" layoutY="601.0" text="Andante" textAlignment="CENTER" textFill="#030303">
+         <font>
+            <Font name="Times New Roman" size="80.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="724.0" fitWidth="319.0" layoutX="10.0" layoutY="8.0">
          <image>
-            <Image url="@../pictures/treble_clef.png" />
+            <Image url="@../pictures/mainmenu_treble_clef.png" />
          </image>
       </ImageView>
    </children>
