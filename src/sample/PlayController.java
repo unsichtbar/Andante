@@ -43,23 +43,31 @@ public class PlayController {
         this.height = 800;
         this.paused = false;
         this.levelComplete = false;
-        //this.setQuestionImages();
         this.choice1Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                // questionButton.setText("you clicked choice 1.");
+                if(currentQuestion.getCorrectAnswer().getContent().equals(choice2Button.getText())){
+                    //go into next question;
+                }
             }
         });
         this.choice2Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 //questionButton.setText("you clicked choice 2.");
+                if(currentQuestion.getCorrectAnswer().getContent().equals(choice2Button.getText())){
+                    //go into next question;
+                }
             }
         });
         this.choice3Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                // questionButton.setText("you clicked choice 3.");
+                if(currentQuestion.getCorrectAnswer().getContent().equals(choice2Button.getText())){
+                    //go into next question;
+                }
             }
         });
     }
