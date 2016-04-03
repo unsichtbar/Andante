@@ -106,6 +106,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/e.mp3");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(.2d);
                 mediaPlayer.play();
             }
         });
@@ -115,6 +116,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/f.mp3");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(.2d);
                 mediaPlayer.play();
             }
         });
@@ -124,6 +126,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/g.mp3");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(.2d);
                 mediaPlayer.play();
             }
         });
@@ -133,6 +136,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/a.mp3");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(.2d);
                 mediaPlayer.play();
             }
         });
@@ -142,6 +146,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/b.mp3");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(.2d);
                 mediaPlayer.play();
             }
         });
@@ -150,8 +155,8 @@ public class MainMenuController {
             public void handle(MouseEvent event) {
                 URL resource = getClass().getResource("/sounds/c.mp3");
                 Media media = new Media(resource.toString());
-
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.setVolume(.2d);
                 mediaPlayer.play();
             }
         });
