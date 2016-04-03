@@ -43,6 +43,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
         //main = this;
         this.window.setTitle("Andante");
+        this.window.setResizable(false);
 
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
