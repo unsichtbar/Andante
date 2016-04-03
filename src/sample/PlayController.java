@@ -52,9 +52,8 @@ public class PlayController {
                     //load next question into controller
                     //if DB Level == null, there aren't any questions left,
                     //take them back to main menu
-                    currentQuestion = (new Question("B",  "key_a_minor.png", "key_c_minor.png", "key_e_minor.png", 0));
-                    questionButton.setText("B");
-
+                    currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
+                    setCurrentQuestion(currentQuestion);
                 }
                 else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -73,6 +72,8 @@ public class PlayController {
                     //load next question into this controller
                         //if DB Level == null, there aren't any questions left
                         // take them back to main menu
+                    currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
+                    setCurrentQuestion(currentQuestion);
                     return;
                 }
                 else{
@@ -92,6 +93,9 @@ public class PlayController {
                     //load next question into this controller;
                     //if DB Level == null, there aren't any questions left,
                     //take them back to main menu
+                    currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
+                    setCurrentQuestion(currentQuestion);
+                    
                     return;
                 }
                 else{
