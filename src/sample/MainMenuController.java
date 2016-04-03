@@ -99,7 +99,7 @@ public class MainMenuController {
     {
         Stage stage;
         Parent root;
-        PlayController gameController = new PlayController();
+        PlayController gameController;
         Main.currentLevel = level;
 
         stage=(Stage)ellipse.getScene().getWindow();
@@ -110,10 +110,11 @@ public class MainMenuController {
             //FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
             //maincontroller = loader.getController();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("play.fxml"));
-            loader.load();
+            root = loader.load();
             gameController =  loader.getController();
             gameController.setCurrentQuestion(new Question("A",  "key_a_minor.png", "key_c_minor.png", "key_e_minor.png", 0));
-            root = FXMLLoader.load(getClass().getResource("play.fxml"));
+            gameController.setQuestionImages();
+            //root = FXMLLoader.load(getClass().getResource("play.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();

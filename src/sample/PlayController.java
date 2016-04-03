@@ -43,22 +43,23 @@ public class PlayController {
         this.height = 800;
         this.paused = false;
         this.levelComplete = false;
+        //this.setQuestionImages();
         this.choice1Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                questionButton.setText("you clicked choice 1.");
+               // questionButton.setText("you clicked choice 1.");
             }
         });
         this.choice2Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                questionButton.setText("you clicked choice 2.");
+                //questionButton.setText("you clicked choice 2.");
             }
         });
         this.choice3Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                questionButton.setText("you clicked choice 3.");
+               // questionButton.setText("you clicked choice 3.");
             }
         });
     }
@@ -70,13 +71,28 @@ public class PlayController {
     }
     public void setQuestionImages()
     {
-       Question q =  question;
+        BackgroundImage backgroundImage1;
+        BackgroundImage backgroundImage2;
+        BackgroundImage backgroundImage3;
+        Question q =  this.currentQuestion;
+
+        // question  field
         String questionText = q.questionCard.getContent();
+        this.questionButton.setText(questionText);
+        // option 1
         String answer1 = q.getAnswers().get(0).getContent();
-        BackgroundImage backgroundImage = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer1).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
-        Background background = new Background(backgroundImage);
-        this.choice1Button.setBackground(background);
+        backgroundImage1 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer1).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        Background background1 = new Background(backgroundImage1);
+        this.choice1Button.setBackground(background1);
+        // option 2
         String answer2 = q.getAnswers().get(1).getContent();
+        backgroundImage2 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer2).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        Background background2 = new Background(backgroundImage2);
+        this.choice2Button.setBackground(background2);
+        //option 3
         String answer3 = q.getAnswers().get(2).getContent();
+        backgroundImage3 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer3).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        Background background3 = new Background(backgroundImage3);
+        this.choice3Button.setBackground(background3);
     }
 }
