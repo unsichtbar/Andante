@@ -192,4 +192,21 @@ public class PlayController {
         Background background3 = new Background(backgroundImage3);
         this.choice3Button.setBackground(background3);
     }
+
+    public void goBack(){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
+        Parent root = null;
+        try {
+            root = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        MainMenuController gameController =  loader.getController();
+        gameController.setStage(this.stage);
+        Scene scene = new Scene(root);
+        Main.db.usedQuestions.clear();
+
+        this.stage.setScene(scene);
+        this.stage.show();
+    }
 }

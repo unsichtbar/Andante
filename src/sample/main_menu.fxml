@@ -12,9 +12,9 @@
    <children>
       <Line endX="1100.0" layoutX="141.0" layoutY="65.0" startX="-100.0" strokeWidth="25.0" />
       <Line endX="1100.0" layoutX="143.0" layoutY="227.0" startX="-100.0" strokeWidth="25.0" />
-      <Line endX="1100.0" layoutX="137.0" layoutY="400.0" startX="-100.0" strokeWidth="25.0" />
-      <Line endX="1100.0" layoutX="148.0" layoutY="561.0" startX="-100.0" strokeWidth="25.0" />
-      <Line endX="1100.0" layoutX="150.0" layoutY="714.0" startX="-100.0" strokeWidth="25.0" />
+      <Line endX="1100.0" layoutX="140.0" layoutY="400.0" startX="-100.0" strokeWidth="25.0" />
+      <Line endX="1100.0" layoutX="142.0" layoutY="561.0" startX="-100.0" strokeWidth="25.0" />
+      <Line endX="1100.0" layoutX="143.0" layoutY="714.0" startX="-100.0" strokeWidth="25.0" />
       <Ellipse fx:id="level_3_note" fill="#f1ff1f" layoutX="600.0" layoutY="553.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_4_note" fill="#1fff27" layoutX="715.0" layoutY="480.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
       <Ellipse fx:id="level_6_note" fill="#1f49ff" layoutX="948.0" layoutY="312.0" radiusX="65.0" radiusY="41.0" stroke="BLACK" strokeType="INSIDE" />
@@ -49,7 +49,7 @@
          <font>
             <Font size="28.0" />
          </font></Label>
-      <Label layoutX="888.0" layoutY="601.0" text="Andante" textAlignment="CENTER" textFill="#030303">
+      <Label fx:id="Andante_label" layoutX="888.0" layoutY="601.0" text="Andante" textAlignment="CENTER" textFill="#030303">
          <font>
             <Font name="Times New Roman" size="80.0" />
          </font>
@@ -69,5 +69,15 @@
             <Image url="@../pictures/lock.png" />
          </image>
       </ImageView>
+      <Label layoutX="1051.0" layoutY="14.0" prefHeight="17.0" prefWidth="203.0" text="Created at UWF CodeFest 2016">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="777.0" prefHeight="18.0" prefWidth="825.0" text="This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
