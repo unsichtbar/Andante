@@ -23,6 +23,7 @@ public class Main extends Application {
     public Scene playScreen;
     public MainMenuController maincontroller;
     public static QuestionDatabase db;
+    public static Music musicPlayer;
    // public Main main;
 
 
@@ -34,20 +35,13 @@ public class Main extends Application {
         this.window = primaryStage;
         Main.db = new QuestionDatabase();
 
-
-
-        /*Media media = new Media(Main.class.getResource("CherryBlossoms.mp3").toString());
-        MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
-        mp.setCycleCount(MediaPlayer.INDEFINITE);
-        mp.play();*/
-        //primaryStage.setResizable(false);
         currentLevel = 0;
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
         //main = this;
         this.window.setTitle("Andante");
         this.window.setResizable(false);
 
-
+        musicPlayer = new Music();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
         Pane page = loader.load();
         maincontroller = loader.getController();
@@ -56,11 +50,7 @@ public class Main extends Application {
         this.startScreen = new Scene(page);
         this.window.setScene(this.startScreen);
         this.window.show();
-        URL resource = getClass().getResource("/sounds/Nocturne.mp3");
-        Media media = new Media(resource.toString());
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
-        mediaPlayer.setVolume(2d);
-        mediaPlayer.play();
+
     }
 
 

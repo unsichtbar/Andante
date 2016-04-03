@@ -197,4 +197,14 @@ public class MainMenuController {
         }
     }
 
+    public void playNocturne(){
+        Main.musicPlayer.playNocturne();
+    }
+    public void playKissTheRain(){
+        Main.musicPlayer.playKissTheRain();
+    }
+    public void playFurElise(){
+        Main.musicPlayer.playFurElise();
+    }
+
 }

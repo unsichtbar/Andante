@@ -69,14 +69,29 @@
             <Image url="@../pictures/lock.png" />
          </image>
       </ImageView>
-      <Label layoutX="1051.0" layoutY="14.0" prefHeight="17.0" prefWidth="203.0" text="Created at UWF CodeFest 2016">
-         <font>
-            <Font name="Times New Roman" size="15.0" />
-         </font>
-      </Label>
       <Label layoutX="238.0" layoutY="777.0" prefHeight="18.0" prefWidth="825.0" text="This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.">
          <font>
             <Font name="Times New Roman" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="nocturne" fitHeight="45.0" fitWidth="45.0" layoutX="1076.0" layoutY="742.0" onMouseClicked="#playNocturne" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/speaker.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="kisstherain" fitHeight="45.0" fitWidth="45.0" layoutX="1142.0" layoutY="742.0" onMouseClicked="#playKissTheRain" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/speaker.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="furelise" fitHeight="45.0" fitWidth="45.0" layoutX="1208.0" layoutY="742.0" onMouseClicked="#playFurElise" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/speaker.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="958.0" layoutY="15.0" text="Created at UWF CodeFest 2016">
+         <font>
+            <Font name="Times New Roman" size="23.0" />
          </font>
       </Label>
    </children>
