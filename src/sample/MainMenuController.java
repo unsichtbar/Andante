@@ -117,7 +117,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/39167__jobro__piano-ff-020.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
-                mediaPlayer.setVolume(.2d);
+                mediaPlayer.setVolume(.7d);
                 mediaPlayer.play();
             }
         });
@@ -127,7 +127,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/39168__jobro__piano-ff-021.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
-                mediaPlayer.setVolume(.2d);
+                mediaPlayer.setVolume(.7d);
                 mediaPlayer.play();
             }
         });
@@ -137,7 +137,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/39170__jobro__piano-ff-023.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
-                mediaPlayer.setVolume(.2d);
+                mediaPlayer.setVolume(.7d);
                 mediaPlayer.play();
             }
         });
@@ -147,7 +147,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/39172__jobro__piano-ff-025.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
-                mediaPlayer.setVolume(.2d);
+                mediaPlayer.setVolume(.7d);
                 mediaPlayer.play();
             }
         });
@@ -157,7 +157,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/39174__jobro__piano-ff-027.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
-                mediaPlayer.setVolume(.2d);
+                mediaPlayer.setVolume(.7d);
                 mediaPlayer.play();
             }
         });
@@ -167,7 +167,7 @@ public class MainMenuController {
                 URL resource = getClass().getResource("/sounds/39175__jobro__piano-ff-028.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
-                mediaPlayer.setVolume(.2d);
+                mediaPlayer.setVolume(.7d);
                 mediaPlayer.play();
             }
         });
