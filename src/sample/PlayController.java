@@ -8,6 +8,7 @@ import javafx.application.Platform; //alternative threading
 
 import javafx.event.EventHandler;
 import javafx.scene.Scene; //listeners and drawing
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -43,23 +44,63 @@ public class PlayController {
         this.height = 800;
         this.paused = false;
         this.levelComplete = false;
-        //this.setQuestionImages();
         this.choice1Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                // questionButton.setText("you clicked choice 1.");
+                if(currentQuestion.getAnswers().get(0).getIsCorrect()){
+                    //load next question into controller
+                    //if DB Level == null, there aren't any questions left,
+                    //take them back to main menu
+                    currentQuestion = (new Question("B",  "key_a_minor.png", "key_c_minor.png", "key_e_minor.png", 0));
+                    questionButton.setText("B");
+
+                }
+                else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("ERROR");
+                    alert.setTitle("ERROR");
+                    alert.setContentText("INCORRECT!");
+                    alert.showAndWait();
+                }
             }
         });
         this.choice2Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                 //questionButton.setText("you clicked choice 2.");
+                if(currentQuestion.getAnswers().get(1).getIsCorrect()){
+                    //load next question into this controller
+                        //if DB Level == null, there aren't any questions left
+                        // take them back to main menu
+                    return;
+                }
+                else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("ERROR");
+                    alert.setTitle("ERROR");
+                    alert.setContentText("INCORRECT!");
+                    alert.showAndWait();
+                }
             }
         });
         this.choice3Button.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
                // questionButton.setText("you clicked choice 3.");
+                if(currentQuestion.getAnswers().get(2).getIsCorrect()){
+                    //load next question into this controller;
+                    //if DB Level == null, there aren't any questions left,
+                    //take them back to main menu
+                    return;
+                }
+                else{
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setHeaderText("ERROR");
+                    alert.setTitle("ERROR");
+                    alert.setContentText("INCORRECT!");
+                    alert.showAndWait();
+                }
             }
         });
     }
