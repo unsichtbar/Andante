@@ -20,6 +20,8 @@ import java.net.URL;
  */
 public class MainMenuController {
 
+    private Stage stage;
+
     @FXML
     Ellipse level_1_note;
     @FXML
@@ -155,9 +157,13 @@ public class MainMenuController {
         });
     }
 
+    public void setStage(Stage stage)
+    {
+        this.stage = stage;
+    }
+
     private void ChangeLevel(Ellipse ellipse, int level)
     {
-        Stage stage;
         Parent root;
         PlayController gameController;
         Main.currentLevel = level;
@@ -172,12 +178,13 @@ public class MainMenuController {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("play.fxml"));
             root = loader.load();
             gameController =  loader.getController();
+            gameController.setStage(this.stage);
             gameController.setCurrentQuestion(Main.db.getUnusedQuestion(level));
             gameController.setQuestionImages();
             //root = FXMLLoader.load(getClass().getResource("play.fxml"));
             Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.show();
+            this.stage.setScene(scene);
+            this.stage.show();
             
         }
         catch(IOException e){

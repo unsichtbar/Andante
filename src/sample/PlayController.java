@@ -7,6 +7,8 @@ package sample;
 import javafx.application.Platform; //alternative threading
 
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene; //listeners and drawing
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -19,12 +21,18 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.fxml.FXML;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class PlayController {
     private int width;
     private int height;
     private boolean paused;
     private boolean levelComplete;
+
+    Stage stage;
+
     public Question currentQuestion;
 
     @FXML
@@ -52,8 +60,8 @@ public class PlayController {
                     //load next question into controller
                     //if DB Level == null, there aren't any questions left,
                     //take them back to main menu
-                    currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
-                    setCurrentQuestion(currentQuestion);
+                    handleQuestions();
+                    return;
                 }
                 else{
                     Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -72,8 +80,7 @@ public class PlayController {
                     //load next question into this controller
                         //if DB Level == null, there aren't any questions left
                         // take them back to main menu
-                    currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
-                    setCurrentQuestion(currentQuestion);
+                    handleQuestions();
                     return;
                 }
                 else{
@@ -93,9 +100,7 @@ public class PlayController {
                     //load next question into this controller;
                     //if DB Level == null, there aren't any questions left,
                     //take them back to main menu
-                    currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
-                    setCurrentQuestion(currentQuestion);
-                    
+                    handleQuestions();
                     return;
                 }
                 else{
@@ -109,6 +114,34 @@ public class PlayController {
         });
     }
 
+    private void handleQuestions() {
+        currentQuestion = (Main.db.getUnusedQuestion(Main.currentLevel));
+        setCurrentQuestion(currentQuestion);
+
+        if(currentQuestion != null)
+        {
+            setQuestionImages();
+        }
+        else{
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
+                Parent root = loader.load();
+                MainMenuController gameController =  loader.getController();
+                gameController.setStage(this.stage);
+                Scene scene = new Scene(root);
+                this.stage.setScene(scene);
+                this.stage.show();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void setStage(Stage stage)
+    {
+        this.stage = stage;
+    }
 
     public void setCurrentQuestion(Question question)
     {
@@ -126,17 +159,17 @@ public class PlayController {
         this.questionButton.setText(questionText);
         // option 1
         String answer1 = q.getAnswers().get(0).getContent();
-        backgroundImage1 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer1).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        backgroundImage1 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer1).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
         Background background1 = new Background(backgroundImage1);
         this.choice1Button.setBackground(background1);
         // option 2
         String answer2 = q.getAnswers().get(1).getContent();
-        backgroundImage2 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer2).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        backgroundImage2 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer2).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
         Background background2 = new Background(backgroundImage2);
         this.choice2Button.setBackground(background2);
         //option 3
         String answer3 = q.getAnswers().get(2).getContent();
-        backgroundImage3 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer3).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        backgroundImage3 = new BackgroundImage( new Image( getClass().getResource("/pictures/"+answer3).toExternalForm()), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
         Background background3 = new Background(backgroundImage3);
         this.choice3Button.setBackground(background3);
     }

@@ -16,10 +16,10 @@ import javafx.stage.StageStyle;
 public class Main extends Application {
 
     public static int currentLevel;
-    private Stage window;
-    private Scene startScreen;
-    private Scene playScreen;
-    private MainMenuController maincontroller;
+    public Stage window;
+    public Scene startScreen;
+    public Scene playScreen;
+    public MainMenuController maincontroller;
     public static QuestionDatabase db;
    // public Main main;
 
@@ -46,11 +46,12 @@ public class Main extends Application {
 
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
+        Pane page = loader.load();
         maincontroller = loader.getController();
+        maincontroller.setStage(window);
         //primaryStage.setScene(new Scene(root, 1280, 800));
-        Pane page = (FXMLLoader.load(Main.class.getResource("main_menu.fxml")));
-        this.playScreen = new Scene(page);
-        this.window.setScene(this.playScreen);
+        this.startScreen = new Scene(page);
+        this.window.setScene(this.startScreen);
         this.window.show();
     }
 
