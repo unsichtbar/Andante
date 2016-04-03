@@ -99,7 +99,7 @@ public class MainMenuController {
     {
         Stage stage;
         Parent root;
-
+        Main.currentLevel = level;
         stage=(Stage)ellipse.getScene().getWindow();
         try{
             root = FXMLLoader.load(getClass().getResource("play.fxml"));
