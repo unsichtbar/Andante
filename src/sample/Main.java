@@ -14,7 +14,7 @@ import javafx.stage.StageStyle;
 
 
 public class Main extends Application {
-
+    public static int currentLevel;
     private Stage window;
     private Scene startScreen;
     private Scene playScreen;
@@ -30,6 +30,7 @@ public class Main extends Application {
         mp.setCycleCount(MediaPlayer.INDEFINITE);
         mp.play();*/
         //primaryStage.setResizable(false);
+        currentLevel = 0;
         Parent root = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
         primaryStage.setTitle("Andante");
         MainMenuController main;
