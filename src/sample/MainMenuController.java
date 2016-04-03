@@ -1,15 +1,19 @@
 package sample;
 
+import com.sun.jndi.toolkit.url.Uri;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Ellipse;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URL;
 
 /**
  * Created by corey on 4/2/16.
@@ -91,6 +95,62 @@ public class MainMenuController {
             @Override
             public void handle(MouseEvent event) {
                 ChangeLevel(level_8_note, 8);
+            }
+        });
+
+        level_1_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                URL resource = getClass().getResource("/sounds/e.mp3");
+                Media media = new Media(resource.toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
+            }
+        });
+        level_2_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                URL resource = getClass().getResource("/sounds/f.mp3");
+                Media media = new Media(resource.toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
+            }
+        });
+        level_3_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                URL resource = getClass().getResource("/sounds/g.mp3");
+                Media media = new Media(resource.toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
+            }
+        });
+        level_4_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                URL resource = getClass().getResource("/sounds/a.mp3");
+                Media media = new Media(resource.toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
+            }
+        });
+        level_5_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                URL resource = getClass().getResource("/sounds/b.mp3");
+                Media media = new Media(resource.toString());
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
+            }
+        });
+        level_6_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                URL resource = getClass().getResource("/sounds/c.mp3");
+                Media media = new Media(resource.toString());
+
+                MediaPlayer mediaPlayer = new MediaPlayer(media);
+                mediaPlayer.play();
             }
         });
     }
