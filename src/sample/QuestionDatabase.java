@@ -37,43 +37,43 @@ public class QuestionDatabase {
     }
     public void populateLevel2(){
         ArrayList<Question> set2 = new ArrayList<Question>();
-        set2.add(new Question("A",  "a_normal.png", "f_normal.png", "b_normal.png", 0));
-        set2.add(new Question("Bb",  "b_flat.png", "e2_flat.png", "a_flat.png", 0));
-        set2.add(new Question("C",  "c_normal.png", "e_normal.png", "a_normal.png", 0));
-        set2.add(new Question("C#",  "c_sharp.png", "a_sharp.png", "f_sharp.png", 0));
-        set2.add(new Question("D",  "d_normal.png", "g_normal.png", "b_normal.png", 0));
+        set2.add(new Question("Pick the note representing A",  "a_normal.png", "f_normal.png", "b_normal.png", 0));
+        set2.add(new Question("Pick the note representing Bb",  "b_flat.png", "e2_flat.png", "a_flat.png", 0));
+        set2.add(new Question("Pick the note representing C",  "c_normal.png", "e_normal.png", "a_normal.png", 0));
+        set2.add(new Question("Pick the note representing C#",  "c_sharp.png", "a_sharp.png", "f_sharp.png", 0));
+        set2.add(new Question("Pick the note representing D",  "d_normal.png", "g_normal.png", "b_normal.png", 0));
         this.levels.put( (Integer)2 , set2);
     }
     public void populateLevel3(){
         ArrayList<Question> set3 = new ArrayList<Question>();
-        set3.add(new Question("Eighth note",  "note_eighth.png", "note_half.png", "note_quarter.png", 0));
-        set3.add(new Question("Quarter note",  "note_quarter.png", "note_whole.png", "note_half.png", 0));
-        set3.add(new Question("Half note",  "note_half.png", "note_quarter.png", "note_whole.png", 0));
-        set3.add(new Question("Whole note",  "note_whole.png", "note_eighth.png", "note_half.png", 0));
+        set3.add(new Question("Which of these is an eighth note?",  "note_eighth.png", "note_half.png", "note_quarter.png", 0));
+        set3.add(new Question("Which of these is a quarter note?",  "note_quarter.png", "note_whole.png", "note_half.png", 0));
+        set3.add(new Question("Which of these is a half note?",  "note_half.png", "note_quarter.png", "note_whole.png", 0));
+        set3.add(new Question("Which of these is a whole note?",  "note_whole.png", "note_eighth.png", "note_half.png", 0));
         this.levels.put( (Integer)3 , set3);
     }
     public void populateLevel4(){
         ArrayList<Question> set4 = new ArrayList<Question>();
-        set4.add(new Question("Whole rest",  "rest_whole.png", "rest_half.png", "rest_quarter.png", 0));
-        set4.add(new Question("Eighth rest",  "rest_eighth.png", "rest_half.png", "rest_quarter.png", 0));
-        set4.add(new Question("Quarter rest",  "rest_quarter.png", "rest_whole.png", "rest_eighth.png", 0));
-        set4.add(new Question("Half rest",  "rest_half.png", "rest_quarter.png", "rest_whole.png", 0));
+        set4.add(new Question("Which of these is a whole rest?",  "rest_whole.png", "rest_half.png", "rest_quarter.png", 0));
+        set4.add(new Question("Which of these is an eighth rest?",  "rest_eighth.png", "rest_half.png", "rest_quarter.png", 0));
+        set4.add(new Question("Which of these is an quarter rest?",  "rest_quarter.png", "rest_whole.png", "rest_eighth.png", 0));
+        set4.add(new Question("Which of these is a half rest?",  "rest_half.png", "rest_quarter.png", "rest_whole.png", 0));
         this.levels.put( (Integer)4 , set4);
     }
     public void populateLevel5(){
         ArrayList<Question> set5 = new ArrayList<Question>();
-        set5.add(new Question("G",  "key_g_major.png", "key_eflat_major.png", "key_c_major.png", 0));
-        set5.add(new Question("F",  "key_f_major.png", "key_aflat_major.png", "key_dflat_major.png", 0));
-        set5.add(new Question("A flat",  "key_aflat_major.png", "key_eflat_major.png", "key_g_major.png", 0));
-        set5.add(new Question("C",  "key_c_major.png", "key_g_major.png", "key_f_major.png", 0));
+        set5.add(new Question("Pick the key signature corresponding to G major.",  "key_g_major.png", "key_eflat_major.png", "key_c_major.png", 0));
+        set5.add(new Question("Pick the key signature corresponding to F major.",  "key_f_major.png", "key_aflat_major.png", "key_dflat_major.png", 0));
+        set5.add(new Question("Pick the key signature corresponding to Ab major.",  "key_aflat_major.png", "key_eflat_major.png", "key_g_major.png", 0));
+        set5.add(new Question("Pick the key signature corresponding to C major.",  "key_c_major.png", "key_g_major.png", "key_f_major.png", 0));
         this.levels.put( (Integer)5 , set5);
     }
     public void populateLevel6(){
         ArrayList<Question> set6 = new ArrayList<Question>();
-        set6.add(new Question("A",  "key_a_minor.png", "key_c_minor.png", "key_e_minor.png", 0));
-        set6.add(new Question("C",  "key_c_minor.png", "key_f_minor.png", "key_g_minor.png", 0));
-        set6.add(new Question("G",  "key_g_minor.png", "key_e_minor.png", "key_c_minor.png", 0));
-        set6.add(new Question("D",  "key_d_minor.png", "key_f_minor.png", "key_c_minor.png", 0));
+        set6.add(new Question("Pick the key signature corresponding to A minor.",  "key_a_minor.png", "key_c_minor.png", "key_e_minor.png", 0));
+        set6.add(new Question("Pick the key signature corresponding to C minor.",  "key_c_minor.png", "key_f_minor.png", "key_g_minor.png", 0));
+        set6.add(new Question("Pick the key signature corresponding to G minor.",  "key_g_minor.png", "key_e_minor.png", "key_c_minor.png", 0));
+        set6.add(new Question("Pick the key signature corresponding to D minor.",  "key_d_minor.png", "key_f_minor.png", "key_c_minor.png", 0));
         this.levels.put( (Integer)6 , set6);
     }
 
