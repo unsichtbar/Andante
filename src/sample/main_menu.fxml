@@ -59,12 +59,12 @@
             <Image url="@../pictures/mainmenu_treble_clef.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1161.0" layoutY="113.0" opacity="0.6">
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1161.0" layoutY="113.0" mouseTransparent="true" opacity="0.6">
          <image>
             <Image url="@../pictures/lock.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1042.0" layoutY="193.0" opacity="0.6">
+      <ImageView fitHeight="48.0" fitWidth="46.0" layoutX="1042.0" layoutY="193.0" mouseTransparent="true" opacity="0.6">
          <image>
             <Image url="@../pictures/lock.png" />
          </image>

@@ -6,10 +6,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Ellipse;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -89,14 +92,22 @@ public class MainMenuController {
         level_7_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_7_note, 7);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Level Locked!");
+                alert.setTitle("Sorry");
+                alert.setContentText("You Cannot Play This Level Yet.");
+                alert.showAndWait();
             }
         });
 
         level_8_note.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                ChangeLevel(level_8_note, 8);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText("Level Locked!");
+                alert.setTitle("Sorry");
+                alert.setContentText("You Cannot Play This Level Yet.");
+                alert.showAndWait();
             }
         });
 
