@@ -12,6 +12,8 @@ import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.net.URL;
+
 
 public class Main extends Application {
 
@@ -29,10 +31,16 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
+
         this.window = primaryStage;
         Main.db = new QuestionDatabase();
 
-
+        URL resource = getClass().getResource("/sounds/Nocturne.mp3");
+        Media liberalMedia = new Media(resource.toString());
+        MediaPlayer noc = new MediaPlayer(liberalMedia);//creates a new thread that plays the mp3
+        //noc.setVolume(1.0);
+        //noc.setCycleCount(MediaPlayer.INDEFINITE);
+        noc.play();
 
         /*Media media = new Media(Main.class.getResource("CherryBlossoms.mp3").toString());
         MediaPlayer mp = new MediaPlayer(media);//creates a new thread that plays the mp3
@@ -53,6 +61,11 @@ public class Main extends Application {
         this.startScreen = new Scene(page);
         this.window.setScene(this.startScreen);
         this.window.show();
+
+
+        //this.window.setOnCloseRequest(windowEvent -> {
+            //noc.stop();
+       // });
     }
 
 

@@ -11,8 +11,6 @@ public class Question {
 
     public Card questionCard;
     public ArrayList<Card> choices; // there should be 3 cards in this. one True and two False
-
-
     public Question( String question, String answer1, String answer2, String answer3, int answerType  ) {
         this.questionCard = new Card(question, 0);
         this.choices = new ArrayList<Card>();
