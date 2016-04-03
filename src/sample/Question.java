@@ -4,71 +4,38 @@ import org.bson.BSON;
 import org.bson.BsonObjectId;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * Created by Mikayla on 4/2/2016.
  */
 public class Question {
-    public BsonObjectId id;
-    public Card quest;
-    public ArrayList<Card> choices;
 
-    public String questionForUser;
-    public String questionFeedback;
-    public String questionTopic;
+    public Card questionCard;
+    public ArrayList<Card> choices; // there should be 3 cards in this. one True and two False
 
-    public int questionNumber;
-    public int questionLevel;
 
-    public Question(String questionForUser, int questionLevel, int questionNumber, String questionFeedback, String questionTopic) {
-
-        this.questionForUser = questionForUser;
-        this.questionLevel = questionLevel;
-        this.questionNumber = questionNumber;
-        this.questionFeedback = questionFeedback;
-        this.questionTopic = questionTopic;
-
+    public Question( String question, String answer1, String answer2, String answer3, int answerType  ) {
+        this.questionCard = new Card(question, answerType);
+        this.choices = new ArrayList<Card>();
+        this.choices.add(new Card(answer1, answerType));
+        this.choices.get(0).setIsCorrect(true);
+        this.choices.add(new Card(answer2, answerType));
+        this.choices.add(new Card(answer3, answerType));
     }
 
-    public String getQuestionForUser() {
-        return questionForUser;
+    /**
+     *
+     * @return
+     */
+    public ArrayList<Card> getAnswers(){
+       return this.choices;
     }
 
-    public void setQuestionForUser(String questionForUser) {
-        this.questionForUser = questionForUser;
-    }
+    public Card getCorrectAnswer(){
 
-    public int getQuestionLevel() {
-        return questionLevel;
-    }
-
-    public void setQuestionLevel(int questionLevel) {
-        this.questionLevel = questionLevel;
-    }
-
-    public int getQuestionNumber() {
-        return questionNumber;
-    }
-
-    public void setQuestionNumber(int questionNumber) {
-        this.questionNumber = questionNumber;
-    }
-
-    public String getQuestionTopic() {
-        return questionTopic;
-    }
-
-    public void setQuestionTopic(String questionTopic) {
-        this.questionTopic = questionTopic;
-    }
-
-    public String getQuestionFeedback() {
-        return questionFeedback;
-    }
-
-    public void setQuestionFeedback(String questionFeedback) {
-        this.questionFeedback = questionFeedback;
+        return this.choices.get(0);
     }
 
 
-}
+}// end of Question class
