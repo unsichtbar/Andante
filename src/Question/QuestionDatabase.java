@@ -1,4 +1,4 @@
-package sample;
+package Question;
 
 import java.util.*;
 

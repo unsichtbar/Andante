@@ -12,7 +12,7 @@ import java.net.URL;
 public class Music {
     private MediaPlayer mediaPlayer;
     public Music(){
-        URL resource = getClass().getResource("/sounds/Nocturne.mp3");
+        URL resource = getClass().getResource("/res/sounds/Nocturne.mp3");
         Media media = new Media(resource.toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setStartTime(Duration.seconds(2.12d));
@@ -22,7 +22,7 @@ public class Music {
 
     public void playNocturne(){
         mediaPlayer.stop();
-        URL resource = getClass().getResource("/sounds/Nocturne.mp3");
+        URL resource = getClass().getResource("/res/sounds/Nocturne.mp3");
         Media media = new Media(resource.toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setStartTime(Duration.seconds(2.12d));
@@ -32,7 +32,7 @@ public class Music {
 
     public void playKissTheRain(){
         mediaPlayer.stop();
-        URL resource = getClass().getResource("/sounds/KissTheRain.mp3");
+        URL resource = getClass().getResource("/res/sounds/KissTheRain.mp3");
         Media media = new Media(resource.toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setVolume(1d);
@@ -41,7 +41,7 @@ public class Music {
 
     public void playFurElise(){
         mediaPlayer.stop();
-        URL resource = getClass().getResource("/sounds/FurEliese.mp3");
+        URL resource = getClass().getResource("/res/sounds/FurEliese.mp3");
         Media media = new Media(resource.toString());
         mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setVolume(5d);

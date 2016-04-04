@@ -1,18 +1,16 @@
-package sample;
+package Main;
 
-import com.sun.jndi.toolkit.url.Uri;
+import Play.PlayController;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Ellipse;
-import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -114,7 +112,7 @@ public class MainMenuController {
         level_1_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                URL resource = getClass().getResource("/sounds/39167__jobro__piano-ff-020.wav");
+                URL resource = getClass().getResource("/res/sounds/39167__jobro__piano-ff-020.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(.7d);
@@ -124,7 +122,7 @@ public class MainMenuController {
         level_2_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                URL resource = getClass().getResource("/sounds/39168__jobro__piano-ff-021.wav");
+                URL resource = getClass().getResource("/res/sounds/39168__jobro__piano-ff-021.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(.7d);
@@ -134,7 +132,7 @@ public class MainMenuController {
         level_3_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                URL resource = getClass().getResource("/sounds/39170__jobro__piano-ff-023.wav");
+                URL resource = getClass().getResource("/res/sounds/39170__jobro__piano-ff-023.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(.7d);
@@ -144,7 +142,7 @@ public class MainMenuController {
         level_4_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                URL resource = getClass().getResource("/sounds/39172__jobro__piano-ff-025.wav");
+                URL resource = getClass().getResource("/res/sounds/39172__jobro__piano-ff-025.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(.7d);
@@ -154,7 +152,7 @@ public class MainMenuController {
         level_5_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                URL resource = getClass().getResource("/sounds/39174__jobro__piano-ff-027.wav");
+                URL resource = getClass().getResource("/res/sounds/39174__jobro__piano-ff-027.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(.7d);
@@ -164,7 +162,7 @@ public class MainMenuController {
         level_6_note.setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                URL resource = getClass().getResource("/sounds/39175__jobro__piano-ff-028.wav");
+                URL resource = getClass().getResource("/res/sounds/39175__jobro__piano-ff-028.wav");
                 Media media = new Media(resource.toString());
                 MediaPlayer mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(.7d);
@@ -191,7 +189,7 @@ public class MainMenuController {
             //Question question =
             //FXMLLoader loader = new FXMLLoader(getClass().getResource("main_menu.fxml"));
             //maincontroller = loader.getController();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("play.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../Play/play.fxml"));
             root = loader.load();
             gameController =  loader.getController();
             gameController.setStage(this.stage);

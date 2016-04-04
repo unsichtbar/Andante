@@ -1,5 +1,7 @@
-package sample;
+package Question;
 
+
+import sample.Card;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
