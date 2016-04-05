@@ -3,6 +3,7 @@ The goal of Andante is to teach people to read sheet music and sight read by fir
 Andante has a simple point-and-click user interface geared towards children.
 
 Contributors
+
 [Alex Lindemann](https://github.com/a-ns)
 
 [Corey Loftis](https://github.com/GlobalCorey)
