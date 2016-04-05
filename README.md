@@ -4,7 +4,11 @@ Andante has a simple point-and-click user interface geared towards children.
 
 Contributors
 [Alex Lindemann](https://github.com/a-ns)
+
 [Corey Loftis](https://github.com/GlobalCorey)
+
 [Michael Moore](https://github.com/Hamhock1570)
+
 [Mikayla Timm](https://github.com/sailormina)
+
 [Hunter Werenskjold](https://github.com/Zombiedance)
