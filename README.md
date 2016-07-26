@@ -10,6 +10,6 @@ Contributors
 
 [Michael Moore](https://github.com/Hamhock1570)
 
-[Mikayla Timm](https://github.com/sailormina)
+[Mikayla Timm](https://github.com/mtimm100)
 
 [Hunter Werenskjold](https://github.com/Zombiedance)
